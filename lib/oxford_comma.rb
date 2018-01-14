@@ -10,13 +10,15 @@ def oxford_comma(array)
     return list
   elsif array.size > 3
     list = ''
+    listFinish = ""
+    listWOEnd = ''
     array.pop()
     array.each { |element|
       element = "#{element}, "
       list << element
     }
-    list.slice(0, list.length-2)
-    list.split(',')
+    listWOEnd = list.slice(0, list.length-2)
+    listFinish = 
   end
  # binding.pry
 end
