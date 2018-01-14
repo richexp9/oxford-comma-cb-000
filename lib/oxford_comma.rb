@@ -16,7 +16,7 @@ def oxford_comma(array)
       list << element
     }
     list.slice(0, list.length-2)
-    list.join(',')
+    list.split(',')
   end
  # binding.pry
 end
