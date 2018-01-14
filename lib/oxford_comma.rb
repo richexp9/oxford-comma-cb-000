@@ -12,13 +12,13 @@ def oxford_comma(array)
     list = ''
     listFinish = ""
     listWOEnd = ''
-    array.pop()
+    last = array.pop()
     array.each { |element|
       element = "#{element}, "
       list << element
     }
     listWOEnd = list.slice(0, list.length-2)
-    listFinish = "#{listWOEnd} and #{array.last}."
+    listFinish = "#{listWOEnd} and #{last}."
   end
  # binding.pry
 end
