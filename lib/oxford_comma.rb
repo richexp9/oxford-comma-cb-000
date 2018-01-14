@@ -21,7 +21,7 @@ def oxford_comma(array)
     return listFinish = "#{listWOEnd} and #{last}"
   else
     list = "#{array[0]}"
-    return
+    return list
   end
  # binding.pry
 end
