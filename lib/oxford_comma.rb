@@ -15,7 +15,7 @@ def oxford_comma(array)
       element = "#{element}, "
       list << element
     }
-    list
+    list.slice(0, list.length-2)
   end
  # binding.pry
 end
