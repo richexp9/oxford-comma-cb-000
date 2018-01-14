@@ -18,7 +18,10 @@ def oxford_comma(array)
       list << element
     }
     listWOEnd = list.slice(0, list.length-1)
-    listFinish = "#{listWOEnd} and #{last}"
+    return listFinish = "#{listWOEnd} and #{last}"
+  else
+    list = "#{array[0]}"
+    return
   end
  # binding.pry
 end
